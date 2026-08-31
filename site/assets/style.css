@@ -190,6 +190,14 @@ h3 { font-size: 1.25rem; }
   border-color: var(--green);
   box-shadow: none;
 }
+.section--green .button--outline {
+  color: var(--green-dark);
+}
+.section--green .button--outline:hover {
+  color: #1f1f1f;
+  background: #ef7a3f;
+  border-color: #ef7a3f;
+}
 .button--dark { color: var(--white); background: var(--green-dark); box-shadow: none; }
 
 .grid { display: grid; gap: 20px; }
