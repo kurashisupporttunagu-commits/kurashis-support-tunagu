@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 公開URLが決まったら YOUR_SITE_URL を置換し、ファイル名を sitemap.xml に変更してください。 -->
+  <url><loc>YOUR_SITE_URL/</loc></url>
+  <url><loc>YOUR_SITE_URL/painting.html</loc></url>
+  <url><loc>YOUR_SITE_URL/life-support.html</loc></url>
+  <url><loc>YOUR_SITE_URL/operator.html</loc></url>
+  <url><loc>YOUR_SITE_URL/contact.html</loc></url>
+  <url><loc>YOUR_SITE_URL/privacy.html</loc></url>
+</urlset>
