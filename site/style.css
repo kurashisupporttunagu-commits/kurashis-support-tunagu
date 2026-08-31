@@ -350,3 +350,15 @@ details > div { padding: 0 20px 20px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
+.section--green a.button--outline {
+  color: #16483c;
+  background: #ffffff;
+  border-color: #1f5a4a;
+}
+
+.section--green a.button--outline:hover,
+.section--green a.button--outline:focus-visible {
+  color: #1f1f1f;
+  background: #ef7a3f;
+  border-color: #ef7a3f;
+}
