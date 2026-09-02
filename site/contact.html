@@ -8,7 +8,7 @@
   <input type="hidden" name="form-name" value="contact">
   <p hidden><label>この欄は入力しないでください：<input name="bot-field"></label></p>
   <div class="form-grid form-grid--2">
-    <div class="field field--full"><label for="consultation_type">相談種類 <span class="required">必須</span></label><select id="consultation_type" name="consultation_type" required><option value="">選択してください</option><option>外壁塗装</option><option>屋根塗装</option><option>外壁と屋根</option><option>付帯部・鉄部・小規模補修</option><option>他社見積書の内容確認</option><option>塗装が必要か相談</option><option>暮らしサポート</option><option>遠方の家族・空き家</option><option>その他</option></select></div>
+    <div class="field field--full"><label for="consultation_type">相談種類 <span class="required">必須</span></label><select id="consultation_type" name="consultation_type" required><option value="">選択してください</option><option>外壁塗装</option><option>屋根塗装</option><option>外壁と屋根</option><option>付帯部・鉄部・小規模補修</option><option>他社見積書の内容確認</option><option>塗装が必要か相談</option><option>草刈り・清掃・空き家確認</option><option>片付け・家庭ごみ・不用品・廃品回収</option><option>不用品・金・銀・プラチナの買取</option><option>車・バイクの買取・引取り</option><option>家具・荷物の室内移動</option><option>遠方の家族・空き家</option><option>その他</option></select></div>
     <div class="field"><label for="name">お名前 <span class="required">必須</span></label><input id="name" name="name" autocomplete="name" required></div>
     <div class="field"><label for="city">市区町村 <span class="required">必須</span></label><input id="city" name="city" placeholder="例：大田原市" autocomplete="address-level2" required></div>
     <div class="field field--full"><label for="address">町名・番地</label><input id="address" name="address" autocomplete="street-address" placeholder="現地調査を希望する場合は番地まで入力"></div>
@@ -17,10 +17,10 @@
     <div class="field"><label for="contact_method">希望連絡方法 <span class="required">必須</span></label><select id="contact_method" name="contact_method" required><option>電話</option><option>メール</option><option>LINE</option></select></div>
     <div class="field"><label for="phone">電話番号</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
     <div class="field field--full"><label for="email">メールアドレス <span class="required">必須</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
-    <div class="field field--full"><label for="message">相談内容 <span class="required">必須</span></label><textarea id="message" name="message" placeholder="気になる場所、いつ頃からか、他社見積書の有無など" required></textarea></div>
-    <div class="field field--full"><label for="photo_overview">建物全体の写真</label><input id="photo_overview" name="photo_overview" type="file" accept="image/jpeg,image/png,image/heic"><p class="small muted">道路や庭から安全に撮った建物全体。1ファイルまで。</p></div>
-    <div class="field field--full"><label for="photo_detail">気になる箇所の写真</label><input id="photo_detail" name="photo_detail" type="file" accept="image/jpeg,image/png,image/heic"><p class="small muted">外壁、ひび、目地、地上から撮れる屋根など。屋根へ上って撮影しないでください。</p></div>
-    <div class="field field--full"><label for="estimate_file">他社の見積書</label><input id="estimate_file" name="estimate_file" type="file" accept="image/jpeg,image/png,image/heic,application/pdf"><p class="small muted">お持ちの場合だけ。3項目の添付合計を8MB以内にしてください。</p></div>
+    <div class="field field--full"><label for="message">相談内容 <span class="required">必須</span></label><textarea id="message" name="message" placeholder="気になる場所、品物の種類と量、車両情報、希望時期など" required></textarea></div>
+    <div class="field field--full"><label for="photo_overview">全体が分かる写真</label><input id="photo_overview" name="photo_overview" type="file" accept="image/jpeg,image/png,image/heic"><p class="small muted">建物、庭、回収品、買取品、車・バイクなど、相談内容の全体が分かる写真。1ファイルまで。</p></div>
+    <div class="field field--full"><label for="photo_detail">気になる箇所・品物の写真</label><input id="photo_detail" name="photo_detail" type="file" accept="image/jpeg,image/png,image/heic"><p class="small muted">劣化箇所、品物の刻印や状態、車両の状態など。危険な場所へ上って撮影しないでください。</p></div>
+    <div class="field field--full"><label for="estimate_file">見積書・関係書類</label><input id="estimate_file" name="estimate_file" type="file" accept="image/jpeg,image/png,image/heic,application/pdf"><p class="small muted">お持ちの場合だけ。個人番号や不要な個人情報は隠し、3項目の添付合計を8MB以内にしてください。</p></div>
     <div class="field field--full"><label class="checkbox"><input type="checkbox" name="privacy_agree" value="同意" required><span><a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意します <span class="required">必須</span></span></label></div>
     <div class="field field--full"><button class="button" type="submit">相談内容を送る</button><p class="small muted">送信だけで契約にはなりません。返信は営業時間内に順次行います。</p></div>
   </div>
