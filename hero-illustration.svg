@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 470" role="img" aria-labelledby="title desc">
+  <title id="title">外壁と屋根の写真相談</title>
+  <desc id="desc">戸建住宅とスマートフォンを表したイラスト</desc>
+  <rect width="640" height="470" rx="28" fill="#F7F4ED"/>
+  <circle cx="535" cy="92" r="48" fill="#DDEBE5"/>
+  <path d="M82 240 280 83l198 157v154H82Z" fill="#fff" stroke="#1F5A4A" stroke-width="14" stroke-linejoin="round"/>
+  <path d="m62 248 218-174 218 174" fill="none" stroke="#1F5A4A" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="138" y="255" width="96" height="139" rx="7" fill="#DDEBE5" stroke="#1F5A4A" stroke-width="10"/>
+  <rect x="305" y="238" width="106" height="84" rx="7" fill="#DDEBE5" stroke="#1F5A4A" stroke-width="10"/>
+  <path d="M358 238v84M305 280h106" stroke="#1F5A4A" stroke-width="8"/>
+  <rect x="443" y="196" width="126" height="224" rx="22" fill="#333"/>
+  <rect x="455" y="218" width="102" height="166" rx="10" fill="#DDEBE5"/>
+  <path d="m470 300 30-26 22 18 21-16v75h-73Z" fill="#1F5A4A"/>
+  <circle cx="491" cy="254" r="13" fill="#E56B2F"/>
+  <circle cx="506" cy="401" r="8" fill="#fff"/>
+  <rect x="72" y="419" width="500" height="12" rx="6" fill="#1F5A4A" opacity=".18"/>
+</svg>

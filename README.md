@@ -1,6 +1,6 @@
 # 暮らしサポート・つなぐ Webサイト
 
-GitHubでコードを管理し、Netlify無料プランで公開する静的Webサイトです。独自ドメインはCloudflare Registrarで取得し、Netlifyへ接続する構成を推奨します。
+GitHubでコードを管理し、Netlify無料プランで公開する静的Webサイトです。取得済みの独自ドメイン `kurashisupport.jp` をNetlifyへ接続する構成です。
 
 ## 推奨構成と費用
 
@@ -10,11 +10,9 @@ GitHubでコードを管理し、Netlify無料プランで公開する静的Web�
 | Web公開 | Netlify Free | 月額0円 |
 | 問い合わせ | Netlify Forms | Credit-basedプランでは送信無料・無制限 |
 | SSL証明書 | Netlify自動発行 | 無料 |
-| 独自ドメイン | Cloudflare Registrarの`.com` | 年10〜12米ドル程度が一般的。為替・レジストリ価格により変動 |
+| 独自ドメイン | お名前.comで取得済み | `kurashisupport.jp` |
 
 Netlify無料プランは月300クレジットです。小規模な地域事業サイトなら開始用途として十分な可能性が高いですが、アクセス・ビルド・通信量は管理画面で確認してください。
-
-Cloudflare Registrarは登録・更新とも原価で、更新時の上乗せがありません。購入時に初年度だけでなく更新価格も確認してください。
 
 ## 収録ページ
 
@@ -27,7 +25,7 @@ Cloudflare Registrarは登録・更新とも原価で、更新時の上乗せが
 - `site/privacy.html`：プライバシーポリシー
 - `site/404.html`：ページが見つからない場合
 
-協力職人・協力業者の募集ページ、応募フォーム、求人SEOはありません。連携先は手配済みという前提で、顧客向けの施工担当・責任者・工程写真の説明だけを掲載しています。
+協力職人・協力業者の募集ページ、応募フォーム、求人SEOはありません。
 
 ## 設定済みの連絡先
 
@@ -74,58 +72,39 @@ GitHubのWeb画面から行う場合は、ZIPそのものではなく、解凍�
 
 最初は `任意の名前.netlify.app` という無料URLで確認してください。
 
-## 3. 安い独自ドメインを取得
-
-第一候補：Cloudflare Registrarで`.com`を取得。
-
-ドメイン候補（取得可否は購入画面で確認）：
-
-- `kurashi-tsunagu.com`
-- `kurashisupport-tsunagu.com`
-- `tsunagu-tochigi.com`
-
-短さと読みやすさでは `kurashi-tsunagu.com` を推奨します。`.jp`は日本事業者らしさがありますが、一般に`.com`より取得・更新費が高くなります。
-
-取得手順：
-
-1. Cloudflareでアカウントを作ります。
-2. Registrarから希望ドメインを検索します。
-3. 初年度価格と更新価格を確認して取得します。
-4. 自動更新を有効にし、二要素認証も設定します。
-
-## 4. 独自ドメインをNetlifyへ接続
+## 3. 独自ドメインをNetlifyへ接続
 
 1. Netlifyの対象サイトで `Domain management` を開きます。
 2. `Add a domain you already own` を選び、取得したドメインを入力します。
 3. Netlifyに表示されるDNSレコードを確認します。
-4. CloudflareのDNS画面で、Netlifyが指定したCNAME又はAレコードを登録します。
-5. CloudflareのProxy statusは、まず `DNS only` にします。
+4. Netlify DNSを使う場合は、Netlifyに表示される4つのネームサーバーを控えます。
+5. お名前.com Naviの「ネームサーバーの設定」から、対象ドメインをNetlify指定のネームサーバーへ変更します。
 6. NetlifyでDNS確認とSSL証明書の発行を待ちます。
-7. `https://独自ドメイン` と `https://www.独自ドメイン` の両方を確認します。
+7. `https://kurashisupport.jp/` と `https://www.kurashisupport.jp/` の両方を確認します。
+
+お名前.comのDNSをそのまま使う場合は、Netlifyの画面に表示されたA/CNAMEレコードをお名前.comのDNS設定へ登録します。画面に表示された値を優先してください。
 
 Netlifyは独自ドメイン追加後、Let's EncryptのSSL証明書を自動発行・更新します。
 
-## 5. 独自ドメイン確定後のSEO設定
+## 4. 独自ドメインとSEO設定
 
-1. `site/sitemap-template.xml` 内の `YOUR_SITE_URL` を実際のURLへ置換します。
-2. ファイル名を `sitemap.xml` に変更します。
-3. `site/robots.txt` の末尾へ次を追加します。
+正式URLは `https://kurashisupport.jp/` です。`sitemap.xml`、`robots.txt`、各ページのcanonical URLは設定済みです。
+
+独自ドメイン接続後に、Google Search Consoleへドメインを登録し、次のサイトマップを送信してください。
 
 ```text
-Sitemap: https://実際のドメイン/sitemap.xml
+https://kurashisupport.jp/sitemap.xml
 ```
 
-4. 各HTMLへcanonical URLとOGP画像URLを設定します。
-5. Google Search Consoleへドメインとサイトマップを登録します。
-6. GoogleビジネスプロフィールのWebサイトURLを独自ドメインへ変更します。
+GoogleビジネスプロフィールのWebサイトURLも `https://kurashisupport.jp/` に設定します。
 
-ドメインが未確定の段階で、架空のcanonical URLは入れていません。
+## 5. 写真について
 
-## 6. 実写真
+トップページと塗装ページに、外壁塗装、刷毛作業、写真・見積書相談のイメージ画像を3点使用しています。画像はHTML内へ埋め込んでいるため、画像ファイルを別にアップロードする必要はありません。実際の施工事例ではないため、画面上にも「作業イメージ」「相談イメージ」と表示しています。
 
-現在のファーストビューは、架空の施工事例と誤認されない住宅イラストです。代表写真、住宅写真、工程写真が用意できたら差し替えてください。お客様宅の写真は掲載媒体ごとに許可を取ってください。
+実際の施工写真が用意できたら、掲載許可と個人情報の写り込みを確認したうえで順次置き換えてください。
 
-## 7. 公開前チェック
+## 6. 公開前チェック
 
 1. LINEボタンが公式アカウントを開くか
 2. 電話リンクが正しい番号へ発信するか
@@ -134,9 +113,8 @@ Sitemap: https://実際のドメイン/sitemap.xml
 5. Gmailへの新規送信通知が届くか
 6. スマートフォンで固定CTAが本文を隠さないか
 7. 未確定の料金、保証、施工件数を掲載していないか
-8. 許可確認前の買取・回収・運搬サービスを掲載していないか
-9. 写真の掲載許可と個人情報の写り込みを確認したか
-10. 独自ドメインのHTTPSとwww転送を確認したか
+8. 画像3点に「作業イメージ」「相談イメージ」の表記があるか
+9. 独自ドメインのHTTPSとwww転送を確認したか
 
 ## 公式資料
 
@@ -144,4 +122,4 @@ Sitemap: https://実際のドメイン/sitemap.xml
 - Netlify Forms：https://docs.netlify.com/manage/forms/setup/
 - 独自ドメイン：https://docs.netlify.com/manage/domains/get-started-with-domains/
 - HTTPS：https://docs.netlify.com/manage/domains/secure-domains-with-https/https-ssl/
-- Cloudflare Registrar：https://www.cloudflare.com/products/registrar/
+- お名前.com：https://www.onamae.com/
